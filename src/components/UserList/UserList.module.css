@@ -1,0 +1,22 @@
+.userList {
+  position: relative;
+  min-height: 100dvh;
+}
+
+.userList__loading_error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.userList__no_users {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.userList__inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14.5rem, 1fr));
+  gap: 2rem;
+}
