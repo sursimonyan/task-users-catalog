@@ -12,7 +12,7 @@ interface SearchProps {
 export const Search = memo(({ searchUser, clearSearch }: SearchProps) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     searchUser(searchTerm);
   };
